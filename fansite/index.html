@@ -2,13 +2,22 @@
     <head>
         <title>Talyor Swift Fan Site!</title>
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            img {
+                border-style: groove;
+                border-width: 10px;
+                border-color: #881616;
+                border-radius: 10px;
+            }
+        </style>
     </head>
     <body>
         <h1><u>Talyor Swift</u> Fan Site!</h1>
         <h2>Welcome to my fabulous Taylor Swift website!</h2>
-        <p>
+        <p id="intro">
             I really really love taylor and I think she is an awesome singer and a very talented writer. 
-            <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+            <i class="fa fa-heart" style="font-size: 48px"></i><i class="fa fa-heart" style="font-size: 48px"></i>
         </p>
         <h2>About the Singer</h2>
         <p>
@@ -18,7 +27,7 @@
             <i>Swift</i> is known for narrative songs about her personal life, which has received much media attention. As a songwriter, she has been awarded by the Nashville Songwriters Association and the Songwriters Hall of Fame. Swift's other achievements include ten Grammy Awards, five Guinness World Records, one Emmy Award, 23 Billboard Music Awards, 11 Country Music Association Awards, eight Academy of Country Music Awards, and one Brit Award. She is one of the best-selling artists of all time, having sold more than 40 million albums—including 27.1 million in the U.S. and 130 million single downloads. She has appeared in Time's 100 most influential people in the world (2010 and 2015), Forbes' top-earning women in music (2011-15), Forbes' 100 most powerful women (2015) and Forbes Celebrity 100 (2016). She was the youngest woman to be included in the third of these and ranked first in the latter. In addition to her music career, Swift has appeared in the television series CSI: Crime Scene Investigation in 2009, the late-night show Saturday Night Live in 2009 and the film Valentine's Day (2010).
         </p>
         <p> Source: <a href="https://en.wikipedia.org/wiki/Taylor_Swift">Wikipedia</a></p>
-        <p> Check how much the world loves our Taylor <a href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Taylor_Swift">here</a></p>
+        <p class="all_caps"> Check how much the world loves our Taylor <a href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Taylor_Swift">here</a></p>
         <h2>Images! <i class="fa fa-picture-o"></i></h2>
         <p>
             <table>
@@ -26,19 +35,19 @@
                     <td><img src="taylor1.jpg" /></td>
                 </tr>
                 <tr>
-                    <td><img src="taylor2.jpg" /></td>
+                    <td><img src="taylor2.jpg" class="half_transperent"/></td>
                 </tr>
             </table>
         </p>
         <h2> Her most <u>awesome</u> songs!! <i class="fa fa-music"></i></h2>
         <p>
-            <table>
+            <table id="tube_table">
                 <tr>
                     <td>
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/e-ORhEE9VVg"></iframe>
+                        <iframe src="https://www.youtube.com/embed/e-ORhEE9VVg"></iframe>
                     </td>
                     <td>
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/8xg3vE8Ie_E"></iframe>
+                        <iframe src="https://www.youtube.com/embed/8xg3vE8Ie_E"></iframe>
                     </td>
                 </tr>
             </table>
