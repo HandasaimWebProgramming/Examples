@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form Validation Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+    function validateForm() {
+      var form = document.forms["signup"];
+      
+      var username = form["username"].value;
+      var password = form["password"].value;
+      var password2 = form["password2"].value;
+      if (username.length < 8)
+      {
+        alert("Username is too short");
+      }
+      else if (password.length < 8)
+      {
+        alert("Password is too short");
+      }
+      else if (password != password2)
+      {
+        alert("Password and validation do not match");
+      }
+      else
+      {
+        alert("Success!");
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Sign up to my website!</h2>
+    <form class="form-horizontal" id="signup">
+      <div class="form-group has-feedback">
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="fullname" placeholder="Full Name">
+        </div>
+      </div>
+      <div id="divpassword" class="form-group has-feedback">
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="username" placeholder="Username">
+        </div>
+      </div>
+      <div id="divpassword" class="form-group has-feedback">
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="E-Mail">
+        </div>
+      </div>
+      <div id="divpassword" class="form-group has-feedback">
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+      </div>
+      <div id="divpassword" class="form-group has-feedback">
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="password2" placeholder="Password Validation">
+        </div>
+      </div>
+      <div id="divpassword" class="form-group has-feedback">
+        <div class="col-sm-10">
+          Birthday: <input type="date" class="form-control" id="birthday">
+        </div>
+      </div>
+      <div id="divpassword" class="form-group has-feedback">
+        <div class="col-sm-10">
+          Profile Picture: <input type="file" class="form-control" id="picture">
+        </div>
+      </div>
+      <div id="divpassword" class="form-group has-feedback">
+        <div class="col-sm-10">
+          <button onclick="validateForm()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

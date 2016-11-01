@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form Validation Example</title>
+  <meta charset="utf-8">
+
+  <script>
+    function validateForm() {
+      var form = document.forms["signup"];
+      
+      var username = form["username"].value;
+      var password = form["password"].value;
+      var password2 = form["password2"].value;
+      if (username.length < 8)
+      {
+        alert("Username is too short");
+      }
+      else if (password.length < 8)
+      {
+        alert("Password is too short");
+      }
+      else if (password != password2)
+      {
+        alert("Password and validation do not match");
+      }
+      else
+      {
+        alert("Success!");
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <h2>Sign up to my website!</h2>
+  <form id="signup">
+    <input type="text" id="fullname" placeholder="Full Name">
+    <br>
+    <input type="text" id="username" placeholder="Username">
+    <br>
+    <input type="email" id="email" placeholder="E-Mail">
+    <br>
+    <input type="password" id="password" placeholder="Password">
+    <br>
+    <input type="password" id="password2" placeholder="Password Validation">
+    <br> Birthday: <input type="date" id="birthday">
+    <br> Profile Picture: <input type="file" id="picture">
+    <br>
+    <button onclick="validateForm()">Submit</button>
+  </form>
+
+</body>
+
+</html>
